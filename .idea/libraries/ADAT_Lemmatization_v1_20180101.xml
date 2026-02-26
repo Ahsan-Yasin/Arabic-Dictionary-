@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="ADAT-Lemmatization.v1.20180101">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/src/lib/ADAT-Lemmatization.v1.20180101.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/lib/ADAT-Stemmer.v1.20180101.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/lib/POSTaggerAlKhalil2.1.4.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

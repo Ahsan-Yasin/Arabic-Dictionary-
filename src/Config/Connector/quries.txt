@@ -1,0 +1,55 @@
+These Quries were used to create  the SQL DATABASE
+CREATE TABLE Roots (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    root_letters VARCHAR(14) NOT NULL
+);
+
+CREATE TABLE Words (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    arabic_form VARCHAR(255) NOT NULL,
+    base_form VARCHAR(255) NOT NULL,
+    urdu_meaning VARCHAR(255) NOT NULL,
+    part_of_speech VARCHAR(50) NOT NULL,
+    root_id INT,
+    FOREIGN KEY (root_id) REFERENCES Roots(id)
+        ON DELETE SET NULL
+        ON UPDATE CASCADE
+);
+CREATE TABLE NounMetadata (
+    word_id INT PRIMARY KEY,
+    gender VARCHAR(20),
+    number VARCHAR(20),
+    grammatical_case VARCHAR(20),
+    FOREIGN KEY (word_id) REFERENCES Words(id)
+        ON DELETE CASCADE
+        ON UPDATE CASCADE
+);
+CREATE TABLE VerbMetadata (
+    word_id INT PRIMARY KEY,
+    verb_form VARCHAR(20),
+    tense VARCHAR(20),
+    transitivity VARCHAR(20),
+    FOREIGN KEY (word_id) REFERENCES Words(id)
+        ON DELETE CASCADE
+        ON UPDATE CASCADE
+);
+
+CREATE TABLE PrepositionMappings (
+    word_id INT,
+    preposition VARCHAR(50),
+    urdu_meaning VARCHAR(255),
+    PRIMARY KEY (word_id, preposition),
+    FOREIGN KEY (word_id) REFERENCES Words(id)
+        ON DELETE CASCADE
+        ON UPDATE CASCADE
+);
+CREATE TABLE Examples (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    word_id INT,
+    sentence TEXT NOT NULL,
+    source VARCHAR(50),
+    reference VARCHAR(100),
+    FOREIGN KEY (word_id) REFERENCES Words(id)
+        ON DELETE CASCADE
+        ON UPDATE CASCADE
+);

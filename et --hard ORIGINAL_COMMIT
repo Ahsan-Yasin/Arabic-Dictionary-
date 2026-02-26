@@ -1,0 +1,15 @@
+[33mab71b30[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m HEAD@{0}: checkout: moving from main to main
+[33mab71b30[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m HEAD@{1}: commit: Taneer's part updated
+[33md941ac5[m HEAD@{2}: rebase (finish): returning to refs/heads/main
+[33md941ac5[m HEAD@{3}: rebase (pick): C
+[33m00a6a70[m HEAD@{4}: commit (rebase): Laiba's part updated
+[33m49b1d84[m HEAD@{5}: commit (rebase): Taneer's part updated
+[33m24d3435[m HEAD@{6}: commit (rebase): Laiba's part updated
+[33m5362f88[m HEAD@{7}: rebase (start): checkout HEAD~10
+[33m178b175[m HEAD@{8}: rebase (abort): returning to refs/heads/main
+[33m5362f88[m HEAD@{9}: rebase (start): checkout HEAD~10
+[33m178b175[m HEAD@{10}: rebase (abort): returning to refs/heads/main
+[33m178b175[m HEAD@{11}: rebase (abort): returning to refs/heads/main
+[33m178b175[m HEAD@{12}: reset: moving to HEAD
+[33m178b175[m HEAD@{13}: checkout: moving from main to main
+[33m178b175[m HEAD@{14}: commit: C

@@ -1,0 +1,3 @@
+id,arabicForm,baseForm,urduMeaning,partOfSpeech,rootLetters,gender,number,wordCase,verbForm,tense,transitivity,examples
+W1,كِتَاب,كتاب,کتاب,NOUN,كتب,Masculine,Singular,Nominative,,,,قرأ الطالب الكتاب
+W2,يَكْتُبُ,كتب,لکھتا ہے,VERB,كتب,,,,I,IMPERFECT,INTRANSITIVE,هو يكتب رسالة
